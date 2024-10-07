@@ -1,0 +1,41 @@
+package basics;
+import java.util.Scanner;
+
+public class array10 {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int a=sc.nextInt();
+		int b[]=new int[a];
+		int temp=0;
+		int num=sc.nextInt();
+		for(int k=0;k<a;k++) {
+			b[k]=sc.nextInt();
+		}
+		for(int i=0;i<a;i++) {
+			for(int j=i+1;j<a;j++) {
+				if(b[i]>b[j]) {
+				temp=b[i];
+				b[i]=b[j];
+				b[j]=temp;
+				}
+				
+			}
+			
+		}
+		for(int i=0;i<a;i++) {
+		System.out.println("after sorting:"+b[i]);
+		}
+		for(int i=0;i<b.length;i++) {
+			if(b.length==num) {
+				System.out.println("present");
+				break;
+			}
+			else {
+				System.out.println("Not Present");
+			}
+		}
+
+	}
+
+}
