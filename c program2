@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int a,b,sum;
+    
+    printf("Enter numbers:");
+    scanf("%d%d",&a,&b);
+    
+    if(a>b){
+        printf("%d is greater\n",a );
+    }
+    else{
+        printf("%d is greater\n",b);
+    }
+    sum=a+b;{
+    if(sum%2==0){
+        printf( "the sum of %d and %d is even \n",a,b);
+    }
+    else{
+        printf("The sum of %d and %d is odd\n",a,b);
+    }}
