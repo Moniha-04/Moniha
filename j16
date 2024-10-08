@@ -1,0 +1,25 @@
+package basics;
+
+import java.util.Scanner;
+
+public class fibonancii {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		{
+		int a=sc.nextInt();
+		int firstDigit=0,secondDigit=1;
+		int i=0;
+	
+		
+		while(i<=a)
+		{
+			System.out.print(firstDigit+" ");
+			int next=firstDigit+secondDigit;
+			firstDigit=secondDigit;
+			secondDigit=next;
+			i++;
+			
+		}
+		
