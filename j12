@@ -1,0 +1,50 @@
+package basics;
+
+import java.util.Scanner;
+
+public class array8 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		int a=sc.nextInt();
+		int b[]=new int[a];
+		int temp=0;
+		for(int k=0;k<a;k++) {
+			b[k]=sc.nextInt();
+		}
+		for(int i=0;i<a;i++) {
+			for(int j=i+1;j<a;j++) {
+				if(b[i]>b[j]) {
+				temp=b[i];
+				b[i]=b[j];
+				b[j]=temp;
+				}
+				
+			}
+			
+		}
+		for(int i=0;i<a;i++) {
+		System.out.print("after sorting:"+b[i]+"'");
+		}
+		int num=sc.nextInt();
+		
+		for(int i=0;i<b.length;i++)
+		{
+			if(b[i]==num)
+			{
+				System.out.println("present in array");
+				break;
+			}
+			else
+			{
+				System.out.println("not present in the array");
+				
+			}
+		}
+
+		
+
+	}
+
+}
