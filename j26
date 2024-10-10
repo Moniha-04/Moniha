@@ -1,0 +1,17 @@
+package basics;
+public class string3 {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str="moniha";
+		int length=str.length();
+		System.out.println(length);
+		String a=str.substring(1,5);
+		System.out.println(a);
+		int index=str.indexOf("matics");
+		System.out.println(index);
+		String lower=str.toLowerCase();
+		System.out.println(lower);
+		String upper=str.toUpperCase();
+		System.out.println(upper);
+	}
+}
