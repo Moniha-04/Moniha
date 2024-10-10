@@ -1,0 +1,30 @@
+package basics;
+
+import java.util.Scanner;
+
+public class palindrome1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		int sum=0;
+		int d=n;
+		int digit;
+		while(n!=0)
+		{ 
+			digit=n%10;
+			sum=sum*10+digit;
+			n=n/10;
+		}
+		if(d==sum) {
+			System.out.println("palindrome");
+		}
+		else {
+			System.out.println("not a palindrome");
+		}
+		
+	}
+
+}
