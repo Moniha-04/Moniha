@@ -1,0 +1,16 @@
+package basics;
+
+public class string1 {
+public static void main(String[] args)
+{
+	String name="moniha";
+	System.out.println("name ");
+	String name1=new String("moni");
+	char c[]= {'j','a','c','k','f','r','u','i','t'};
+	String s2=new String(c);
+	System.out.println(s2);
+	System.out.println(name1.charAt(0));
+	}
+}
+
+
