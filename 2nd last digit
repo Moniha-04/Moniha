@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+    int N, secondno;
+
+
+    printf("Enter a number: ");
+    scanf("%d", &N);
+
+    if (N < 10 && N > -10) {
+        printf("The number doesn't have a second last digit.\n");
+    } else {
+
+        secondno = (N / 10) % 10;
+
+       
+        if (secondno < 0) {
+            secondno = -secondno;
+        }
+
+  
+        printf("The second last digit is: %d\n", secondno);
+    }
+
+    return 0;
+}
